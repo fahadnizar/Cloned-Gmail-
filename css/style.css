@@ -263,3 +263,11 @@ body{
 .emaillist{
     cursor: pointer;
 }
+
+.imgfont{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+
+}
