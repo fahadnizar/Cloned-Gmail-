@@ -6,7 +6,7 @@
 
 .headerleft img{
     object-fit: contain;
-    height: 80px;
+    height: 70px;
     margin-left: 5px;
     
 }
@@ -23,6 +23,11 @@
 
 }
 
+.headerleft img {
+    right: auto;
+    padding-right: 10px;
+}
+
 .headerleft span{
     padding: 10px;
     cursor: pointer;
@@ -32,7 +37,7 @@
     flex: 0.7;
     align-items: center;
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 3px;
     border-radius: 5px;
 }
 
@@ -132,7 +137,7 @@ body{
 
 .listhead{
     flex: 1;
-    /* overflow:scroll; */
+    overflow:scroll;
 }
 .listsetting {
     position:sticky;
