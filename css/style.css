@@ -285,3 +285,40 @@ body{
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+.emailrowmessage h4{
+	width: 391px;
+
+}
+.section h4 {
+    margin-left: 0px;
+}
+.sidebody {
+    max-width: 150px;
+}
+.sidebodyopt h3 {
+    margin-left: 1px;
+}
+.headerleft img {
+    height: 30px;
+    margin-left: 0px;
+    padding-right: 0px;
+}
+.headermiddle {
+    padding: 0px;
+    border-radius: 5px;
+}
+.material-symbols-outlined {
+    margin-right: 0px;
+}
+.headermiddle input { 
+    padding: 0px;
+}
+}
+@media screen and (max-width: 425px) {
+.headermiddle{
+	padding:0px;
+	border-radius:9px;
+}
+
+}
