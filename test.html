@@ -1,252 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Gmail Inbox</title>
-</head >
-    <body style="font-family:Arial,sans-serif;" >
-        <div class="header">
-            <div class="headerleft">
-                <span class="material-symbols-outlined">menu</span>
-                <img src="Assets/Gmail_Logo_512px.png" alt="Logo" style="width:50px;" >
-                <h3 class="imgfont" style="color: grey;">Gmail</h3>
-            </div>
-            <div class="headermiddle">
-                <span class="material-symbols-outlined">search</span>
-                <input class="form-control me-2" type="text"  placeholder="Search mail">
-                <span class="material-symbols-outlined">tune</span>
-            </div>
-            
-            <div class="headerright">
-                <span class="material-symbols-outlined">help</span>                
-                <span class="material-symbols-outlined">settings</span>                
-                <span class="material-symbols-outlined">apps</span>
-                <span class="material-symbols-outlined">account_circle</span>
-
-
-            </div>
-
+  </head>
+  <body style="font-family:Arial,sans-serif;">
+    <div class="header">
+      <div class="headerleft">
+        <span class="material-symbols-outlined">menu</span>
+        <img src="Assets/Gmail_Logo_512px.png" alt="Logo" style="width:50px;">
+        <h3 class="imgfont" style="color: grey;">Gmail</h3>
+      </div>
+      <div class="headermiddle">
+        <span class="material-symbols-outlined">search</span>
+        <input class="form-control me-2" type="text" placeholder="Search mail">
+        <span class="material-symbols-outlined">tune</span>
+      </div>
+      <div class="headerright">
+        <span class="material-symbols-outlined">help</span>
+        <span class="material-symbols-outlined">settings</span>
+        <span class="material-symbols-outlined">apps</span>
+        <span class="material-symbols-outlined">account_circle</span>
+      </div>
+    </div>
+    <!-- big body     -->
+    <div class="bigbody">
+      <div class="sidebody">
+        <button class="sidecompose">
+          <span class="material-symbols-outlined">add</span>Compose </button>
+        <div class="sidebodyopt sidebarOpt__active">
+          <span class="material-symbols-outlined">inbox </span>
+          <h3>Inbox</h3>
         </div>
-
-     <!-- big body     -->
-        <div class="bigbody">
-            <div class="sidebody" >
-                <button class="sidecompose">
-                    <span class="material-symbols-outlined">add</span>Compose
-                </button>
-                
-                <div class="sidebodyopt sidebarOpt__active">
-                    <span class="material-symbols-outlined">inbox </span>
-                    <h3>Inbox</h3>
-                </div>
-                
-                <div class="sidebodyopt">
-                    <span class="material-symbols-outlined">star </span>
-                    <h3>Starred</h3>
-                </div>
-                
-                <div class="sidebodyopt">
-                    <span class="material-symbols-outlined">schedule</span>
-                    <h3>Snoozed</h3>
-                </div>
-                <div class="sidebodyopt">
-                <span class="material-symbols-outlined">send</span>
-                <h3>Sent</h3>
-                </div>
-                <div class="sidebodyopt">
-                    <span class="material-symbols-outlined">draft</span>
-                    <h3>Draft</h3>
-                </div>
-                <div class="sidebodyopt">
-                    <span class="material-symbols-outlined">label</span>              
-                <h3>[Imap]/Sent</h3>
-                </div>
-                <div class="sidebodyopt">
-                    <span class="material-symbols-outlined">label</span>              
-                <h3>[Imap]/Trash</h3>
-                </div><div class="sidebodyopt">
-                    <span class="material-symbols-outlined">label</span>              
-                <h3>[Imap]/Conversation history</h3>
-                </div>
-                <div class="sidebodyopt">
-                    <span class="material-symbols-outlined">expand_more</span>
-                    <h3>more</h3>
-                </div>
-
-                <div class="sidebodyopt">
-                <span class="material-symbols-outlined">video_call</span>
-                    <h3>New meeting</h3>
-                </div>
-
-                <div class="sidebodyopt">
-                <span class="material-symbols-outlined">keyboard</span>
-                <h3>Join meeting</h3>
-                </div>
-            </div>    
-            <!-- list head -->
-        <div class="listhead">
-            <div class="listsetting">
-                <div class="listsettingleft">
-
-                    <span class="material-symbols-outlined">check_box_outline_blank</span>
-                    <span class="material-symbols-outlined">refresh</span>
-                    <span class="material-symbols-outlined">more_vert</span>
-
-                </div>
-                <div class="listsettingright">
-                    <span class="material-symbols-outlined">chevron_left</span>
-                    <span class="material-symbols-outlined"> chevron_right</span>  
-                </div>
-            </div>
-            <div class="listsection" >
-                <div class="section section__selected">
-                    <span class="material-symbols-outlined ">inbox</span>
-                    <h4>Primary</h4>
-                </div>
-                <div class="section">
-                    <span class="material-symbols-outlined"> sell</span>               
-                    <h4>Promotions</h4>
-                </div>
-                <div class="section">
-                    <span class="material-symbols-outlined">group</span>             
-                    <h4>Social</h4>
-                </div>
-            </div>
-            <!-- row -->
-            <div class="emaillist">
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >Bitbucket</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>Learn about plans
-                            <span class="emailrowdescription">-Findthe right set of features that work best for your team</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">10:20</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >GitHub</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>[GitHub] A new SSH authentication public key was added to your account 
-                            <span class="emailrowdescription">-The following S</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 10</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >Bitbucket</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>Welcome to Bitbucket
-                            <span class="emailrowdescription">-Get started with your team</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 10</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >GitHub</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>[GitHub] A first-party GitHub OAuth application has been added to your account
-                            <span class="emailrowdescription">-Hey fahadnizar</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 10</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >GitHub</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>[GitHub]Welcome to GitHub,@fahadnizar!
-                            <span class="emailrowdescription">-Welcome to GitHub , @fahadnizar!</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 10</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >Youtube</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>You got a new subscriber
-                            <span class="emailrowdescription">-on your channel Future coder</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 10</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >GitHub</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>[GitHub]Welcome to GitHub,@fahadnizar!
-                            <span class="emailrowdescription">-on your channel Future coder</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 10</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >Myntra</h3>
-
-                    <div class="emailrowmessage">
-                        <h4>We're Freeing You From MRPs 
-                            <span class="emailrowdescription">-Get unlimited offers</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 9</p>
-                </div>
-                <div class="emailrow">
-                    <div class="emailRow__options">
-                        <span class="material-symbols-outlined">check_box_outline_blank</span>
-                        <span class="material-symbols-outlined">grade</span>
-                    </div>
-                    <h3 class="emailrowtitle" >Amazon </h3>
-
-                    <div class="emailrowmessage">
-                        <h4>Shop now!!
-                            <span class="emailrowdescription">-It's now or never get it</span>
-                        </h4>
-                    </div>
-                    <p class="emailrowtime">August 8</p>
-                </div>
-            </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">star </span>
+          <h3>Starred</h3>
         </div>
-
-</div>
-</body>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">schedule</span>
+          <h3>Snoozed</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">send</span>
+          <h3>Sent</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">draft</span>
+          <h3>Draft</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">label</span>
+          <h3>[Imap]/Sent</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">label</span>
+          <h3>[Imap]/Trash</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">label</span>
+          <h3>[Imap]/Conversation history</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">expand_more</span>
+          <h3>more</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">video_call</span>
+          <h3>New meeting</h3>
+        </div>
+        <div class="sidebodyopt">
+          <span class="material-symbols-outlined">keyboard</span>
+          <h3>Join meeting</h3>
+        </div>
+      </div>
+      <!-- list head -->
+      <div class="listhead">
+        <div class="listsetting">
+          <div class="listsettingleft">
+            <span class="material-symbols-outlined">check_box_outline_blank</span>
+            <span class="material-symbols-outlined">refresh</span>
+            <span class="material-symbols-outlined">more_vert</span>
+          </div>
+          <div class="listsettingright">
+            <span class="material-symbols-outlined">chevron_left</span>
+            <span class="material-symbols-outlined"> chevron_right</span>
+          </div>
+        </div>
+        <div class="listsection">
+          <div class="section section__selected">
+            <span class="material-symbols-outlined ">inbox</span>
+            <h4>Primary</h4>
+          </div>
+          <div class="section">
+            <span class="material-symbols-outlined"> sell</span>
+            <h4>Promotions</h4>
+          </div>
+          <div class="section">
+            <span class="material-symbols-outlined">group</span>
+            <h4>Social</h4>
+          </div>
+        </div>
+        <!-- row -->
+        <div class="emaillist">
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">Bitbucket</h3>
+            <div class="emailrowmessage">
+              <h4>Learn about plans <span class="emailrowdescription">-Findthe right set of features that work best for your team</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">10:20</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">GitHub</h3>
+            <div class="emailrowmessage">
+              <h4>[GitHub] A new SSH authentication public key was added to your account <span class="emailrowdescription">-The following S</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 10</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">Bitbucket</h3>
+            <div class="emailrowmessage">
+              <h4>Welcome to Bitbucket <span class="emailrowdescription">-Get started with your team</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 10</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">GitHub</h3>
+            <div class="emailrowmessage">
+              <h4>[GitHub] A first-party GitHub OAuth application has been added to your account <span class="emailrowdescription">-Hey fahadnizar</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 10</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">GitHub</h3>
+            <div class="emailrowmessage">
+              <h4>[GitHub]Welcome to GitHub,@fahadnizar! <span class="emailrowdescription">-Welcome to GitHub , @fahadnizar!</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 10</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">Youtube</h3>
+            <div class="emailrowmessage">
+              <h4>You got a new subscriber <span class="emailrowdescription">-on your channel Future coder</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 10</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">GitHub</h3>
+            <div class="emailrowmessage">
+              <h4>[GitHub]Welcome to GitHub,@fahadnizar! <span class="emailrowdescription">-on your channel Future coder</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 10</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">Myntra</h3>
+            <div class="emailrowmessage">
+              <h4>We're Freeing You From MRPs <span class="emailrowdescription">-Get unlimited offers</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 9</p>
+          </div>
+          <div class="emailrow">
+            <div class="emailRow__options">
+              <span class="material-symbols-outlined">check_box_outline_blank</span>
+              <span class="material-symbols-outlined">grade</span>
+            </div>
+            <h3 class="emailrowtitle">Amazon </h3>
+            <div class="emailrowmessage">
+              <h4>Shop now!! <span class="emailrowdescription">-It's now or never get it</span>
+              </h4>
+            </div>
+            <p class="emailrowtime">August 8</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
