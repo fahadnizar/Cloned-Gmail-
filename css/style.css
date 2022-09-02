@@ -3,9 +3,14 @@
 	padding: 0;
 }
 
-.headerleft img {
+.Icons {
+	width: 26px;
+	padding: 6px;
+}
+
+.gIcon {
+	width: 50px;
 	object-fit: contain;
-	height: 70px;
 	margin-left: 5px;
 	padding-right: 10px;
 
@@ -47,7 +52,7 @@
 	border-radius: 5px;
 }
 
-.material-symbols-outlined {
+.Icons {
 	color: gray;
 }
 
@@ -97,14 +102,10 @@
 
 }
 
-.material-symbols-outlined {
-	margin-right: 5px;
-}
 
 .sidebodyopt {
 	display: flex;
 	align-items: 40px;
-	height: 40px;
 	padding: 0 10px;
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
@@ -114,6 +115,7 @@
 
 .sidebodyopt h3 {
 	flex: 1;
+	margin-top: 11px;
 	margin-left: 10px;
 	font-size: 14px;
 	font-weight: 400;
@@ -122,10 +124,10 @@
 
 .sidebarOpt:hover,
 .sidebarOpt:hover h3,
-.sidebarOpt:hover .material-symbols-outlined,
+.sidebarOpt:hover .Icons,
 .sidebarOpt__active,
 .sidebarOpt__active h3,
-.sidebarOpt__active .material-symbols-outlined {
+.sidebarOpt__active .Icons {
 	background-color: #fcecec;
 	color: red;
 	font-weight: 800;
@@ -133,7 +135,7 @@
 
 
 .sidebodyopt:hover,
-.material-symbols-outlined:hover h3 {
+.Icons:hover h3 {
 	background-color: rgb(248, 230, 230);
 	color: rgb(90, 86, 86);
 }
@@ -141,11 +143,11 @@
 /* bigbody */
 .bigbody {
 	display: flex;
-	height: 100vh
+
 }
 
 body {
-	height: 100vh;
+
 	overflow-y: hidden;
 
 }
@@ -160,7 +162,6 @@ body {
 }
 
 .listsetting {
-	position: sticky;
 	top: 0;
 	display: flex;
 	justify-content: space-between;
@@ -176,7 +177,7 @@ body {
 
 }
 
-.listsetting .material-symbols-outlined {
+.listsetting .Icons {
 	margin: 5px;
 	cursor: pointer;
 }
@@ -193,7 +194,7 @@ body {
 }
 
 .listsection {
-	position: sticky;
+
 	top: 0;
 	display: flex;
 	background-color: white;
@@ -208,7 +209,7 @@ body {
 	border-bottom: 3px solid red;
 }
 
-.section__selected .material-symbols-outlined {
+.section__selected .Icons {
 	color: red;
 
 }
@@ -231,7 +232,7 @@ body {
 
 }
 
-.emailRow__options .material-symbols-outlined,
+.emailRow__options .Icons,
 input {
 	margin: 5px;
 
@@ -240,7 +241,7 @@ input {
 .emailrow {
 	display: flex;
 	align-items: center;
-	height: 50px;
+	padding: 5px;
 	border-bottom: 1px solid whitesmoke;
 	z-index: 999;
 }
@@ -305,6 +306,7 @@ input {
 
 	.emailrowtime {
 		font-size: 9px;
+		padding-right: 3px;
 	}
 
 	.section h4 {
@@ -321,8 +323,8 @@ input {
 		font-size: 13px;
 	}
 
-	.headerleft img {
-		height: 24px;
+	.gIcon {
+		width: 24px;
 		margin-left: 0px;
 		padding-right: 0px;
 	}
@@ -336,8 +338,8 @@ input {
 		border-radius: 5px;
 	}
 
-	.material-symbols-outlined {
-		margin-right: 0px;
+	.Icons {
+		width: 20px;
 	}
 
 	.headermiddle input {
@@ -351,12 +353,12 @@ input {
 		border-radius: 9px;
 	}
 
-	.headerleft img {
-		height: 17px;
+	.gIcon {
+		width: 17px;
 	}
 
-	.material-symbols-outlined {
-		font-size: 12px;
+	.Icons {
+		width: 12px;
 
 	}
 
@@ -410,8 +412,8 @@ input {
 	}
 
 	.emailrowmessage h4 {
-		width: 153px;
-		white-space: pre;
+		width: 131px;
+		white-space: nowrap;
 	}
 }
 
@@ -422,10 +424,13 @@ input {
 	}
 
 	.emailrowmessage h4 {
-		width: 110px;
+		width: 85px;
 	}
 
 	.emailrowtime {
 		padding-right: 0px;
 	}
-}
+
+	.sidebodyopt h3 {
+		margin-top: 5px;
+	}
